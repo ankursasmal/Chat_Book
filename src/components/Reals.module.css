@@ -1,0 +1,3 @@
+.hideslider::-webkit-scrollbar {
+    display: none;
+}

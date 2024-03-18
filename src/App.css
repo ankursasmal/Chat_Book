@@ -1,0 +1,55 @@
+ .ankur{
+  color:black;
+   font:bold ;
+   display:flex;
+   justify-content: center; 
+ }
+ .navbarmain{
+  position: fixed;
+  overflow: hidden;
+  top: 0px;
+  width: 100%;
+  background: ghostwhite;
+ }
+ .hide{
+  display: none;
+  visibility: hidden;
+ }
+#show{
+  display: block;
+  visibility: visible;
+ }
+ .overtext{
+  bottom: 30px;
+  left: 20px;
+ }
+ .sliderborder{
+  border-radius: 50% !important;
+ }
+ .create{
+  color: red;
+    position: absolute;
+    top: 57%;
+    left: 36%;
+    padding: 4px;
+     border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: white;
+ }
+ .imgmain{
+  height: 70%;
+ }
+ .createtext{
+  font-size: 31px;
+  color: blue;
+ }
+ .namefont{
+  font-size: 24px;
+ }  
+
+  .round{
+background-color: rgb(29, 68, 241);    
+border: .5px solid blue;
+border-radius: 50%; 
+padding: 32px; 
+}
