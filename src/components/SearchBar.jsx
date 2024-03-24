@@ -14,17 +14,17 @@ function SearchBar() {
 <hr className='py-2'/>
 <div className='mb-3 flex items-center justify-evenly'>
 <div className='flex items-center  '> 
-  <RiLiveFill className='text-3xl'/>
-<a className='text-3xl ml-1'>Live Vedios</a>
+  <RiLiveFill className='md:text-3xl text-1xl'/>
+<a className='   ml-1 md:text-[20px] text-[12px]'>Live Vedios</a>
 </div>
 <div className='flex  items-center '> 
-  <MdOutlinePhotoLibrary className='text-3xl'/>
-<a className='text-3xl ml-1'>Phote/Vedio</a>
+  <MdOutlinePhotoLibrary className='md:text-3xl text-1xl'/>
+<a className='  ml-1 md:text-[20px] text-[12px]'>Phote/Vedio</a>
 </div>
 <div className='flex  items-center '> 
-  <CiFaceSmile   className='text-3xl'/>
+  <CiFaceSmile   className='md:text-3xl text-1xl'/>
 
-<a className='text-3xl ml-1'>Phote/Vedio</a>
+<a className='  ml-1 md:text-[20px] text-[12px]'>Phote/Vedio</a>
 </div>
 </div>
     </div>

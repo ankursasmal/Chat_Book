@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { createContext, useEffect, useRef, useState } from 'react'
  import { IoEarthSharp } from "react-icons/io5";
 import { BsThreeDots } from "react-icons/bs";
  import { AiOutlineLike } from "react-icons/ai";
@@ -7,7 +7,6 @@ import { IoIosShareAlt } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
 import Comment from './Comment';
  
-
 //***1. channel id wise all vedio only channelId alada channel wise hoba 
 const url1='https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyAxTE23s4UXmVX2XYfi1dZbNx1pJxrsj2s&channelId=UCwfaAHy4zQUb2APNOGXUCCA&part=snippet,id&order=date&maxResults=3' ;
 //***2.  most popular vedio link below only key is my from-> console.google.com
@@ -18,18 +17,28 @@ function Allvedio() {
   let [values,setval]=useState([]);
   let refinput=useRef(null);
 let reflike=useRef(null);
-  
+  let len=values.length;
+  let [showcomment,setShowcomment]=useState([false,false]);
+   
   // commentaction for hide and show comment bar
-let commentaction=(e)=>{
-  e.preventDefault();
-  if(commentbar){
+let commentaction=(i)=>{
+    showcomment.filter((a,id)=>{
+       if(commentbar){
+    if(i===id){
      setcommentbar(false);
+ 
+    }
   }
   else{
-    setcommentbar(true);
-    refinput.current.focus();
+    if(i===id){
 
+    setcommentbar(true);
+
+     }
   }
+    
+  })
+  
    
   }
 
@@ -51,31 +60,30 @@ useEffect(()=>{
 
   return (
     <div>
-         
-  {/* for ifream disply   media  src="https://www.youtube.com/embed/as it is only add (vedioId)" */}
+   {/* for ifream disply   media  src="https://www.youtube.com/embed/as it is only add (vedioId)" */}
  {values.map((e,i) => {
   return (
     <div key={i} className='flex flex-col my-5  py-2'>
     <div className='flex p-3 justify-between items-center'>
     <div className='flex items-center '>
-      <img className='border rounded-full w-[70px] h-[70px] ' src={`${e.snippet.thumbnails.default.url}`} alt=""   />
+      <img className='border rounded-full md:w-[70px] md:h-[70px] w-[50px] h-50px ' src={`${e.snippet.thumbnails.default.url}`} alt=""   />
     <div className='flex ml-4 flex-col justify-evenly'>
-      <div className='flex items-center text-3xl'> 
-      <h3 className='pr-1 text-blue-500 namefont'>{e.snippet.channelTitle} .</h3>
-      <a className='text-blue-500 namefont'> Follow</a>
+      <div className='flex items-center md:text-3xl text-1xl'> 
+      <h3 className='pr-1 text-blue-500 namefont md:text-[14px] text-[10px] '>{e.snippet.channelTitle} .</h3>
+      <a className='text-blue-500 namefont md:text-[14px] text-[10px] '> Follow</a>
       </div>
       <div className='flex items-center '> 
-      <a className='pr-.5px text-black'>{e.snippet.publishedAt}.</a>
-      <IoEarthSharp className='pl-1 text-2xl'/>
+      <a className='pr-.5px text-black md:text-[12px] text-[10px]'>{e.snippet.publishedAt}.</a>
+      <IoEarthSharp className='pl-1 md:text-2xl text-1xl'/>
      </div>
     </div>
     
     </div>
     <div className='flex items-center '>
     
-     <BsThreeDots className='text-3xl pl-1 mx-1' />
+     <BsThreeDots className='md:text-3xl text-1xl  pl-1 mx-1' />
     
-     <RxCross1 className='text-2xl pl-1 mr-1'/>
+     <RxCross1 className='md:text-2xl text-1xl pl-1 mr-1'/>
     
     </div>
     
@@ -123,7 +131,7 @@ useEffect(()=>{
   <a ref={reflike}>Like</a>
   </button>
     
-   <button className='flex items-center justify-center mr-.5 rounded-full bg-slate-200 p-5  w-[30%]  ' onClick={commentaction}>
+   <button className='flex items-center justify-center mr-.5 rounded-full bg-slate-200 p-5  w-[30%]  ' onClick={()=>{  commentaction(i)}}>
   <LuMessageCircle />
   <a className='text-[23px] sm:text-[17px]' id='com1'>Commments</a>
   </button> 
@@ -153,9 +161,9 @@ useEffect(()=>{
   )
 })  
 }
- 
-     </div>
-  )
+ </div>
+    )
 }
 
 export default Allvedio
+ 
