@@ -7,8 +7,8 @@ import { CiCirclePlus } from "react-icons/ci";
 
 function Grid2() {
   return (
-    <div>
-     <div className='p-4 mt-3 overflow-y-auto h-[700px] flex flex-col'>
+    <div className='h-[100vh]  '>
+     <div className='p-4 mt-3  flex flex-col  '  >
         <div className='flex flex-col '>
             <h1>Sponcerad</h1>
 <div className='flex items-center hover:border-[.05px] hover:border-black p-2' >

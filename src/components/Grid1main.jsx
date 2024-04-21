@@ -5,7 +5,7 @@ function Grid1main() {
    
   return (
     <div       
-    className="col-span-3   overflow-y-scroll hidden lg:block     " style={{height:'100vw'}}>
+    className="col-span-3 w-[80%]  overflow-y-scroll hidden lg:block     " style={{height:'100vh'}}>
 <Grid1/>
   </div>
   )

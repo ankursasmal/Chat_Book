@@ -12,12 +12,12 @@ function Nav2() {
      <div  className='w-[100%]  '> 
      <div className='hidden md:visible md:block   lg:pl-12'> 
        <div className='flex justify-around py-2 w-[100%] '>
-  <LuHome className='text-5xl ' />
-  <IoPerson className='text-5xl '/>
-   <AiOutlineYoutube className='text-5xl '/>
-   <CiShop className='text-5xl  '/>
-   <FaGamepad className='text-6xl  hidden lg:block '/>
-   <HiBars3  className='text-6xl  lg:hidden ' />
+  <LuHome className='text-4xl ' />
+  <IoPerson className='text-4xl '/>
+   <AiOutlineYoutube className='text-4xl '/>
+   <CiShop className='text-4xl  '/>
+   <FaGamepad className='text-5xl  hidden lg:block '/>
+   <HiBars3  className='text-5xl  lg:hidden ' />
 
 
    </div>
