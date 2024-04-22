@@ -41,7 +41,7 @@ function Grid2() {
 </div>
 <a>hours</a>
 </div>
- <FriendCard/>
+ <FriendCard text={"Confirm"} text1={"Delete"}/>
  <div className='mt-3 flex flex-col px-1'>
  <div className=' flex items-center items-center justify-between'>
     <a className='text-[20px]'>contact</a>

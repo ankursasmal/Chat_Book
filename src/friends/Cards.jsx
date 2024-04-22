@@ -1,0 +1,21 @@
+import React from 'react'
+import Title from '../components/Title'
+import style from '../Style/Cards.module.css'
+function Cards() {
+  return (
+    <div className={` ${style.shadows} flex flex-col m-3 rounded-lg `}>
+      <img src="https://media.licdn.com/dms/image/D4D03AQHUsR6wSFHSTA/profile-displayphoto-shrink_200_200/0/1679241006988?e=2147483647&v=beta&t=3t0t05OSCsynqbifgP6lMe-oq2Kv6AtkaFHT2zZJO7o" alt=""  className=' w-[200px]'/>
+    <div className='flex flex-col mx-2 my-2'>
+<Title name="api name"/>
+<div className='flex items-center '>
+    <img src="" alt="" className='h-4 w-4' /> 
+    <Title name="Mutual Friends"></Title>
+</div>
+<button className='px-2 my-2 py-1 bg-blue-500 rounded-lg text-white'>Confirm</button>
+<button className='px-2 mb-2 py-1 bg-gray-300 text-black rounded-lg'>Delete</button>
+    </div>
+    </div>
+  )
+}
+
+export default Cards
