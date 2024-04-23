@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import Title from './Title'
+import { Link } from "react-router-dom";
+
+
 import { AiOutlineVideoCamera } from "react-icons/ai";
 import { RiMemoriesFill } from "react-icons/ri";
 import { CiBookmark } from "react-icons/ci";
@@ -28,35 +31,33 @@ function Grid1() {
            <Title name={'Ankur Sasmal'}/>
 
         </div>
-        <div className='flex items-center '>
+        <Link to='/friends'>  <div className='flex items-center '>
             <img className='border rounded-full w-[40px] h-[40px] mr-4'  src="  https://www.shutterstock.com/image-vector/facebook-friends-user-interface-icon-260nw-465585674.jpg" alt=""   />
             <Title name={'Friends'}/>
 
-        </div>
-        <div className='flex items-center my-3'>
+        </div></Link>
+        <Link to='/vedios'>  <div className='flex items-center my-3'>
         <AiOutlineVideoCamera className='mx-4'/>
 
              <Title name={'Vedios'}/>
 
-        </div>
-        <div className='flex items-center my-3'>
+        </div></Link>
+
+      <Link to='/memories'>   <div className='flex items-center my-3'>
         <RiMemoriesFill className='mx-4'/>
 
              <Title name={'Memories'}/>
 
-        </div>
-        <div className='flex items-center my-3'>
+        </div></Link>
+      
+        <Link to='/save'>  <div className='flex items-center my-3'>
         <CiBookmark className='mx-4'/>
 
              <Title name={'Saved'}/>
 
         </div>
-        <div className='flex items-center my-3'>
-        <MdGroup className='mx-4'/>
-
-             <Title name={'Grops'}/>
-
-        </div>
+        </Link>
+         
         <div className='flex items-center my-3'>
         <MdGroup className='mx-4'/>
 

@@ -23,23 +23,21 @@ import { FaBookmark } from "react-icons/fa";
     
  <div className='pl-3  mt-3 overflow-y-auto h-[100vh] w-[23%] flex flex-col' style={{position:'fixed',top:'85px',left:'0px'}}>
   <div className='flex flex-col    '> 
-   <Link to='/vedios'> 
-       <div className='flex items-center justify-between my-3 sm:mx-0  md:mx-3 lg:mx-3  '>
+        <div className='flex items-center justify-between my-3 sm:mx-0  md:mx-3 lg:mx-3  '>
     <a className={`${style.fontsizes} text-2xl font-semibold`}>Vedio</a>
         <IoSettingsSharp   />
  </div>
- </Link>
- <Link to='/vedios/live'> 
-
-    <div className='flex px-2 py-1 my-3 items-center border-1px bg-gray-100  rounded-full  w-[95%]   '>
+ 
+    <div className='flex px-1 py-.5 md:px-2 md:py-1 my-3 items-center border-1px bg-gray-100  rounded-full  md:w-[95%]  w-[100%] '>
       <CiSearch className='text-3xl px-2' />
 
 <input type="text" placeholder='search vedio' className='w-[92%] p-[1px]  bg-gray-100   outline-none border-none   text-[9px] rounded-full' />
-</div></Link>
+</div>
 
     <div className='flex items-center justify-between sm:mx-0  md:mx-4 lg:mx-4 my-3'>
       
-      <Link to="/friends/friend-request"><div className='flex items-center '>
+    <Link to='/vedios'> 
+<div className='flex items-center '>
 
     <PiTelevisionSimpleBold className='mr-4'/>
 
@@ -48,7 +46,8 @@ import { FaBookmark } from "react-icons/fa";
 <MdArrowForwardIos />
 
     </div>
-  <Link to="/friends/suggestion">   <div className='flex items-center justify-between sm:mx-0  md:mx-4 lg:mx-4 my-3'>
+    <Link to='/vedios/live'> 
+   <div className='flex items-center justify-between sm:mx-0  md:mx-4 lg:mx-4 my-3'>
     <div className='flex items-center '>
 
     <MdOutlineVideoCameraBack className='mr-4'/>
@@ -57,9 +56,9 @@ import { FaBookmark } from "react-icons/fa";
 </div>
 <MdArrowForwardIos />
 
-    </div></Link>
+    </div></Link> 
     
-    <Link to="/friends/all-friend"> 
+    <Link to="/vedios/shows"> 
      <div className='flex items-center justify-between sm:mx-0  md:mx-4 lg:mx-4 my-3'>
     <div className='flex items-center '>
 
@@ -72,7 +71,7 @@ import { FaBookmark } from "react-icons/fa";
     </div>
     </Link>
 
-    <Link to="/friends/birthday"> 
+    <Link to="/vedios/explore"> 
 <div className='flex items-center my-3 sm:mx-0  md:mx-3 lg:mx-3 '>
     <IoRocketOutline className='mr-3'/>
     <a className={`${style.fontsizes}`}> Explore</a>
@@ -80,7 +79,7 @@ import { FaBookmark } from "react-icons/fa";
     </div>
     </Link>
 
-    <Link to="/friends/custom"> 
+    <Link to="/vedios/savevideo"> 
 <div className='flex items-center justify-between  sm:mx-0  md:mx-4 lg:mx-4 my-3'>
     <div className='flex items-center '>
 

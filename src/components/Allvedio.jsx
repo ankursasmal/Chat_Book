@@ -8,9 +8,9 @@ import { RxCross1 } from "react-icons/rx";
 import Comment from './Comment';
  
 //***1. channel id wise all vedio only channelId alada channel wise hoba 
-const url1='https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyAxTE23s4UXmVX2XYfi1dZbNx1pJxrsj2s&channelId=UCwfaAHy4zQUb2APNOGXUCCA&part=snippet,id&order=date&maxResults=3' ;
+const url1='https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyAa6ZYHs9CZx3AEwZiqmoOjRqei5Gt3sFY&channelId=UCwfaAHy4zQUb2APNOGXUCCA&part=snippet,id&order=date&maxResults=3' ;
 //***2.  most popular vedio link below only key is my from-> console.google.com
-    let url='https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&key=AIzaSyD9k1boQl04rNgL3zHK6dVwrBNMN_rFOxc&maxResults=2';
+    let url='https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&key=AIzaSyAa6ZYHs9CZx3AEwZiqmoOjRqei5Gt3sFY&maxResults=2';
   
 function Allvedio() {
   let [commentbar,setcommentbar]=useState(true);

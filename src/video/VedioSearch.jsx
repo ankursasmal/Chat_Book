@@ -5,13 +5,18 @@ import { BsThreeDots } from "react-icons/bs";
 import { LuMessageCircle } from "react-icons/lu";
 import { IoIosShareAlt } from "react-icons/io";
 import { RxCross1 } from "react-icons/rx";
-import Comment from './Comment';
- 
+import Comment from '../components/Comment';
+  
 //***1. channel id wise all vedio only channelId alada channel wise hoba 
 const url1='https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyAxTE23s4UXmVX2XYfi1dZbNx1pJxrsj2s&channelId=UCwfaAHy4zQUb2APNOGXUCCA&part=snippet,id&order=date&maxResults=3' ;
 //***2.  most popular vedio link below only key is my from-> console.google.com
-    let url='https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&key=AIzaSyD9k1boQl04rNgL3zHK6dVwrBNMN_rFOxc&maxResults=2';
-    function VedioSearch() {
+  let url2='https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&key=AIzaSyD9k1boQl04rNgL3zHK6dVwrBNMN_rFOxc&maxResults=2';
+    
+ 
+  function VedioSearch({vedioId}) {
+    console.log(vedioId);
+ //**3 search url */
+  // const url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=2&q=${vedioId}&key=AIzaSyCuQrip2LNCteALTv7_BLsrykbuawoIBMk`;
 
    let [commentbar,setcommentbar]=useState(true);
   let [values,setval]=useState([]);
@@ -48,7 +53,7 @@ let commentaction=(i)=>{
 
  //  use effect under api handel ,[] dependency nothing means only one time exiquit 
 useEffect(()=>{
-    fetch(url).then(res=>res.json()).then(data=>{ 
+    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=2&q=${vedioId}&key=AIzaSyAa6ZYHs9CZx3AEwZiqmoOjRqei5Gt3sFY`).then(res=>res.json()).then(data=>{ 
            let {items}=data;
           //  value arr under arr elemet transper
             setval(items);
@@ -91,35 +96,11 @@ useEffect(()=>{
     {/* vedio section */}
                 <div className='mt-1 '>
 
-   <iframe key={i} className='h-[200px] w-[100%]   lg:h-[700px] w-[100%] md:w-[100%] h-[500px]  object-cover' src={`https://www.youtube.com/embed/${e.id}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay encrypted-media; gyroscope; picture-in-picture; web-share " allowfullscreen ></iframe>  
+   <iframe key={i} className='h-[200px] w-[100%]   lg:h-[700px] w-[100%] md:w-[100%] h-[500px]  object-cover' src={`https://www.youtube.com/embed/${e.id.videoId}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay encrypted-media; gyroscope; picture-in-picture; web-share " allowfullscreen ></iframe>  
    
        </div>  
         
-        <div className='flex my-2 justify-between item-center'>
-<div className='flex items-center justify-start pl-2'>
-<img src="" alt="" />
-<AiOutlineLike />
-{/* like action display */}
-
-{/* {`${e.statistics.likeCount}`/1000 .toFixed(1)} or */}
-  <a>{e.statistics.likeCount}</a>
- 
-
-</div>
-<div className='flex items-center '>
-
-<div className='flex item-center mx-3 '>
-       <a className='px-1'>{`${e.statistics.commentCount}`/1000 .toFixed(1)} {"k"}{' '}comments</a>
- </div>
-<div className='flex item-center mr-2'>
-  <a className='px-1'>9</a>
-  <a>share</a>
-</div>
-</div>
-</div>
-<div className='flex items-center justify-start pl-2'>
-
-</div>
+    
 <hr className='my-3'/>
 
 <div className='py-2 px-2 flex justify-between items-center text-2xl md:text-3xl'>
@@ -145,8 +126,7 @@ useEffect(()=>{
  <hr className='my-3'/>
 
 {/* comment section */}
-
- {commentbar && e.id==e.id ?<div style={{display:'none',visibility:'hidden'}}> 
+  {commentbar && e.id==e.id ?<div style={{display:'none',visibility:'hidden'}}> 
  <Comment ref={refinput} key={e.id} name={e.snippet.channelTitle}/>
 </div>:
 <div style={{display:'block',visibility:'visible'}}> 
