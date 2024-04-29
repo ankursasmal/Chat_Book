@@ -58,30 +58,32 @@ function Grid1() {
         </div>
         </Link>
          
-        <div className='flex items-center my-3'>
+        <Link to='/groups'>   <div className='flex items-center my-3'>
         <MdGroup className='mx-4'/>
 
-             <Title name={'Grops'}/>
+             <Title name={'Gropus'}/>
 
         </div>
-        <div className='flex items-center my-3'>
+        </Link>
+        <Link to='/market-place'><div className='flex items-center my-3'>
         <FaShop className='mx-4'/>
 
              <Title name={'MarketPlacess'}/>
 
         </div>
-        <div className='flex items-center my-3'>
+         </Link>
+        <Link to='/feeds'>  <div className='flex items-center my-3'>
         <BiBookAdd className='mx-4'/>
 
              <Title name={'Feeds'}/>
 
-        </div>
-         <div className='flex items-center my-3'>
+        </div></Link>
+        <Link to='/test'>   <div className='flex items-center my-3'>
         <BiCalendarStar className='mx-4'/>
 
              <Title name={'Events'}/>
 
-        </div>
+        </div></Link>
        <div className='flex items-center my-3'>
        <img className='border rounded-full w-[40px] h-[40px] mr-3'  src=" https://img.myloview.com/posters/line-graph-icon-isolated-on-white-background-statistics-symbol-modern-simple-vector-icon-for-website-design-mobile-app-ui-vector-illustration-700-255818520.jpg" alt=""   />
              <Title name={'AddMannager'}/>

@@ -8,7 +8,7 @@ function Acquaintances() {
     <div className='flex items-center justify-between flex-wrap '>
     <div className='flex   flex-col pl-2 '>
 
-<a className='text-[3vw] font-semibold'>Acquaintances
+<a className='text-[4.5vw] md:text-[2.3vw] font-semibold'>Acquaintances
 
  </a>
 <a> People who you might want to share less with. Learn More

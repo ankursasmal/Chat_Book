@@ -25,13 +25,13 @@ import { FaBookmark } from "react-icons/fa";
   <div className='flex flex-col    '> 
         <div className='flex items-center justify-between my-3 sm:mx-0  md:mx-3 lg:mx-3  '>
     <a className={`${style.fontsizes} text-2xl font-semibold`}>Vedio</a>
-        <IoSettingsSharp   />
+        <IoSettingsSharp    className='text-2xl'/>
  </div>
  
     <div className='flex px-1 py-.5 md:px-2 md:py-1 my-3 items-center border-1px bg-gray-100  rounded-full  md:w-[95%]  w-[100%] '>
       <CiSearch className='text-3xl px-2' />
 
-<input type="text" placeholder='search vedio' className='w-[92%] p-[1px]  bg-gray-100   outline-none border-none   text-[9px] rounded-full' />
+<input type="text" placeholder='search vedio' className='w-[92%] p-[1px]  bg-gray-100   outline-none border-none  text-[9px] lg:text-[15px] md:text-[13px] rounded-full' />
 </div>
 
     <div className='flex items-center justify-between sm:mx-0  md:mx-4 lg:mx-4 my-3'>

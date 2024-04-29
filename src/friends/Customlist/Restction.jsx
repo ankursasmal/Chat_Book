@@ -8,7 +8,7 @@ function Restction() {
     <div className='flex items-center justify-between flex-wrap '>
     <div className='flex   flex-col pl-2 '>
 
-<a className='sm:text-[4.2vw] md:text-[2.5vw]  font-semibold'>Restricted
+<a className='sm:text-[4.5vw] md:text-[2vw]  font-semibold'>Restricted
  </a>
 <a> Friends who can only see posts and profile info you make public. Learn More
 

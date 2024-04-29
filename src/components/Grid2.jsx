@@ -43,7 +43,7 @@ function Grid2() {
 </div>
  <FriendCard text={"Confirm"} text1={"Delete"}/>
  <div className='mt-3 flex flex-col px-1'>
- <div className=' flex items-center items-center justify-between'>
+ <div className=' flex items-center   justify-between'>
     <a className='text-[20px]'>contact</a>
     <div className='flex items-center'> 
              <CiSearch className='text-5xl px-2' />

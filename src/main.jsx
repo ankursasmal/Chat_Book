@@ -7,8 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
   import Middlepart from './components/Middlepart.jsx';
- import SearchBar from './components/SearchBar.jsx';
- import Grid2 from './components/Grid2.jsx';
+  import Grid2 from './components/Grid2.jsx';
 import SecondUiPage from './friends/SecondUiPage.jsx';
 import Friend_request from './friends/Friend_request.jsx';
 import Friends from './friends/Friends.jsx';
@@ -33,6 +32,20 @@ import MemoryUi from './Grid1Memory.jsx/MemoryUi.jsx';
 import Notification from './Grid1Memory.jsx/Notification.jsx';
 import Hide_people from './Grid1Memory.jsx/Hide_people.jsx';
 import Hide_Date from './Grid1Memory.jsx/Hide_Date.jsx';
+import FeedUi from './Feed/FeedUi.jsx';
+import Allfeed from './Feed/Allfeed.jsx';
+import FavoriteFeed from './Feed/FavoriteFeed.jsx';
+import FriendFeeds from './Feed/FriendFeeds.jsx';
+import GroupFeed from './Feed/GroupFeed.jsx';
+import PagesFeed from './Feed/PagesFeed.jsx';
+import MarketplaceUi from './MarketPlace/MarketplaceUi.jsx';
+import NotificationMarketplace from './MarketPlace/NotificationMarketplace.jsx';
+import InboxMarketplace from './MarketPlace/InboxMarketplace.jsx';
+import GroupUi from './Groups/GroupUi.jsx';
+import Your_feed_Groups from './Groups/Your_feed_Groups.jsx';
+import DiscoveriesGroup from './Groups/DiscoveriesGroup.jsx';
+import Your_groups from './Groups/Your_groups.jsx';
+import Modal_profile from './components/Modal_profile.jsx';
 
  const router = createBrowserRouter([
  //for nav routing
@@ -48,13 +61,11 @@ import Hide_Date from './Grid1Memory.jsx/Hide_Date.jsx';
        element:<Middlepart/>,
           },
      
-        {
-      path: "/marketplace",
-    element:<SearchBar/>,
-    },
+       
+     
     {
-      path: "/groups",
-    element:<Grid2/>,
+      path: "/test",
+    element:<Modal_profile/>,
     },
   ]
   },
@@ -190,7 +201,78 @@ import Hide_Date from './Grid1Memory.jsx/Hide_Date.jsx';
         },
            
       ]
-}
+},
+// for grid1-> feed section routing
+{
+  path: "/feeds",
+      element:<FeedUi/>,
+      children:[
+        {
+          path: "/feeds",
+          element:<Allfeed/>,
+        
+        },
+        {
+          path:'/feeds/favorite',
+          element:<FavoriteFeed/>
+        },{
+          path:'/feeds/friend',
+          element:<FriendFeeds/>
+        },
+        {
+          path:'/feeds/groups',
+          element:<GroupFeed/>
+        },
+        {
+          path:'/feeds/pages',
+          element:<PagesFeed/>
+        }, 
+           
+      ]
+},
+// for nav/grid1-> marketplace routing
+{
+  path: "/market-place",
+      element:<MarketplaceUi/>,
+      children:[
+        {
+          path: "/market-place",
+          element:<Allfeed/>,
+        
+        },
+        {
+          path: "/market-place/notification",
+          element:<NotificationMarketplace/>,
+        
+        },
+        {
+          path: "/market-place/Inbox",
+          element:<InboxMarketplace/>,
+        
+        },
+      ]
+      },
+      {
+        path: "/groups",
+            element:<GroupUi/>,
+            children:[
+              {
+                path: "/groups",
+                element:<Your_feed_Groups/>,
+              
+              },
+              {
+                path: "/groups/discover",
+                element:<DiscoveriesGroup/>,
+              
+              },
+              {
+                path: "/groups/your-groups",
+                element:<Your_groups/>,
+              
+              },
+            ]
+            }
 
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(

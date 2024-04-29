@@ -8,12 +8,12 @@ function CloseFriend() {
     <div className='flex justify-between flex-wrap '>
     <div className='flex  flex-col pl-2 '>
 
-    <button className=' self-start py-[.7vw] rounded-lg my-2 text-blue-500 hover:bg-blue-400 hover:text-white border-none outline-none '>Close Friends</button>
+    <button className='sm:text-[4.4vw] md:text-[2.2vw] font-semibold self-start '>Close Friends</button>
 
  <a>Your friends, who you can share exclusively with if you want. Learn More
 </a>
 </div>
-<a className=' font-semibold text-blue-500'>Mannage</a>
+<button className='px-[1vw] py-[.7vw] rounded-lg my-2 text-blue-500 hover:bg-blue-400 hover:text-white border-none outline-none '>Manage</button>
 </div>
 
 <div className='flex justify-center  flex-col items-center text-center my-[6vw]'>
