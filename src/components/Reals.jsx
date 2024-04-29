@@ -7,7 +7,7 @@ import { BsThreeDots } from "react-icons/bs";
 function Reals() {
   return (
     <div className='mt-4'>
-      <div className='flex flex-col'>
+      <div className='flex flex-col -z-40'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center '>
         <SiYoutubeshorts className='text-4xl pl-1'/>

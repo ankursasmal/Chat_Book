@@ -23,7 +23,7 @@ function NavSqureItems() {
     let [seen,setseen]=useState(true);
   return (
     <div div className='h-[50vh]'>
-     <div className='pl-3 mr-6 overflow-y-auto h-[50vh] w-[250px] flex flex-col'  >
+     <div className='pl-3 mr-6 overflow-y-auto h-[50vh] w-[250px]  flex flex-col'  >
       <div className='flex flex-col    '> 
         <div className='flex items-center py-3  '>
         <div className='flex px-1 py-.5 md:px-2 md:py-1 items-center border-1px bg-gray-100  rounded-full  md:w-[95%]  w-[100%] '>

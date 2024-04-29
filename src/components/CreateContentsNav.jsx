@@ -3,7 +3,7 @@ import NavCreate from './NavCreate'
 
 function CreateContentsNav() {
   return (
-    <div className=' fixed top-[90px] right-[2vw]'>
+    <div className=' fixed md:top-[85px] top-[74px] right-[2vw] h-[41vw] lg:hidden block'>
      <NavCreate/> 
     </div>
   )

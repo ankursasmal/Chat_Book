@@ -8,7 +8,7 @@ import style from '../Style/Cards.module.css'
 
 function NavCreate() {
   return (
-    <div className={`${style.shadows} flex flex-col p-2 w-[300px] border-1px bg-white border-black  ml-3   h-[41vw] overflow-y-auto  `}>
+    <div className={`${style.shadows} flex flex-col p-2 w-[250px] md:w-[300px] border-1px bg-white border-black  ml-3      overflow-y-auto  `}>
    <a className='text-[2.6vw] md:text-[2vw] font-bold my-3'>Create</a>   
 <div className='flex items-center '>
     <FaPenToSquare className="mr-3"/>

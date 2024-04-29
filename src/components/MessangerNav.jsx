@@ -8,7 +8,7 @@ import ContactSection from './ContactSection';
 
 function MessangerNav() {
   return (
-    <div className={`${style.shadows} flex flex-col p-2 w-[200px] md:w-[320px] lg:w-[430px] border-1px bg-white border-black fixed  lg:top-[89px] sm:top-[10vw] md:top-[85px] right-[4vw] h-[40vw] overflow-y-auto`}>
+    <div className={`${style.shadows} flex flex-col p-2 w-[220px] md:w-[320px] lg:w-[430px] border-1px bg-white border-black fixed  md:top-[88px] top-[74px] right-[4vw] lg:h-[40vw] md:h-[500px] h-[500px] overflow-y-auto`}>
     <div className={ `flex flex-col px-[1.5vw] py-[2vw]   `}>
         <div className='flex items-center justify-between '>
 <a className='text-[2.6vw] md:text-[2vw] font-bold'>Chats</a>     

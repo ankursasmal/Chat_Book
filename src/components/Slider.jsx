@@ -3,7 +3,7 @@ import React from 'react'
 function Slider() {
   return (
     <div>
-       <div className='sliderborder relative mx-2 w-[205px] border-black border-[.5px] rounded-md !importent   h-[300px] md:w-[300px] h-[390px] lg:w-[300px] h-[420px] '>
+       <div className='sliderborder relative mx-2 w-[205px] border-black border-[.5px] rounded-md !importent   h-[300px] md:w-[300px] h-[390px] lg:w-[300px] h-[420px] '  >
   <div className='ml-5 absolute w-[30px] h-[30px]  bg-blue-300 text-white  l-2 t-4 '>
 <h3 className='px-2 py-1 ' >4</h3>
   </div>

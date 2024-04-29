@@ -8,8 +8,8 @@ import { AiOutlineYoutube } from "react-icons/ai";
  import { CiShop } from "react-icons/ci";
  import { HiBars3 } from "react-icons/hi2";
 import { useRef } from 'react';
- import NavSqureMenu from './NavSqureMenu';
-
+import NavSqureMenu from './NavSqureMenu';
+ 
 function Nav2() {
   
   let [clickSqureDot,setclickSqureDot]=useState(false);
@@ -27,19 +27,8 @@ function Nav2() {
   <Link to='/vedios'> <AiOutlineYoutube className='text-4xl '/></Link>
   <Link to='/market-place'> <CiShop className='text-4xl  '/></Link>
    {/*tailwind css a display:none ->hidden nama a work kora  */}
-  <Link to='/groups'><MdGroups2 className='text-5xl hidden lg:block '/></Link> 
-   <HiBars3  className='text-4xl  lg:hidden '  onClick={(e)=>{
-      e.preventDefault();
-if(clickSqureDot===true){
-  setclickSqureDot(false);
-  displayclickSqureDot.current.style.display='block';
-}  
-else{
-  setclickSqureDot(true);
-  displayclickSqureDot.current.style.display='none';
-
-}    
-     }}  />  
+  <Link to='/groups'><MdGroups2 className='text-5xl '/></Link> 
+    
 
 
    </div>
