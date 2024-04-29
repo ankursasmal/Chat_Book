@@ -53,7 +53,7 @@ let commentaction=(i)=>{
 
  //  use effect under api handel ,[] dependency nothing means only one time exiquit 
 useEffect(()=>{
-    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=2&q=${vedioId}&key=AIzaSyAa6ZYHs9CZx3AEwZiqmoOjRqei5Gt3sFY`).then(res=>res.json()).then(data=>{ 
+    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=90&q=${vedioId}&key=AIzaSyAa6ZYHs9CZx3AEwZiqmoOjRqei5Gt3sFY`).then(res=>res.json()).then(data=>{ 
            let {items}=data;
           //  value arr under arr elemet transper
             setval(items);
