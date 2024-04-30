@@ -1,8 +1,5 @@
 .hideslider::-webkit-scrollbar {
     display: none;
 }
-.hideslider{
-    z-index: -1 !important;
-}
-
+ 
 

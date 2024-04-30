@@ -126,18 +126,18 @@ useEffect(()=>{
   
   {/* like buttton click */}
 
-   <button     className='flex items-center justify-center mr-.5 rounded-full bg-slate-200 p-5 w-[30%]'   onClick={()=>{reflike.current.style.backgroundColor='blue'}}>
-  <AiOutlineLike ref={reflike}/>
-  <a ref={reflike}>Like</a>
+   <button     className='flex items-center justify-center mr-.5 rounded-full bg-slate-200 px-[1vw] py-[.5vw] w-[30%]'   onClick={()=>{reflike.current.style.backgroundColor='blue'}}>
+  <AiOutlineLike ref={reflike} className='text-[2.5vw] md:text-[1.6vw]'/>
+  <a ref={reflike} className='md:text-[1.4vw] text-[2.2vw]'>Like</a>
   </button>
     
-   <button className='flex items-center justify-center mr-.5 rounded-full bg-slate-200 p-5  w-[30%]  ' onClick={()=>{  commentaction(i)}}>
-  <LuMessageCircle />
-  <a className='text-[23px] sm:text-[17px]' id='com1'>Commments</a>
+   <button className='flex items-center justify-center mr-.5 rounded-full bg-slate-200 px-[1vw] py-[.5vw]   w-[30%]  ' onClick={()=>{  commentaction(i)}}>
+  <LuMessageCircle  className='text-[2.5vw] md:text-[1.6vw]'/>
+  <a className='md:text-[1.4vw] text-[2.2vw]' id='com1'>Commments</a>
   </button> 
-  <button className='flex items-center justify-center mr-.5 rounded-full bg-slate-200 p-5  w-[30%]'>
-  <IoIosShareAlt />
-  <a className='sm:text-[17px]'>share</a>
+  <button className='flex items-center justify-center mr-.5 rounded-full bg-slate-200 px-[1vw] py-[.5vw] w-[30%]'>
+  <IoIosShareAlt className='text-[2.5vw] md:text-[1.6vw]' />
+  <a className='md:text-[1.4vw] text-[2.2vw]'>share</a>
 
   </button>
 
