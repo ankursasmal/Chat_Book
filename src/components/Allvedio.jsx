@@ -8,9 +8,10 @@ import { RxCross1 } from "react-icons/rx";
 import Comment from './Comment';
  
 //***1. channel id wise all vedio only channelId alada channel wise hoba 
+let key="AIzaSyAa6ZYHs9CZx3AEwZiqmoOjRqei5Gt3sFY";
 const url1='https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyAa6ZYHs9CZx3AEwZiqmoOjRqei5Gt3sFY&channelId=UCwfaAHy4zQUb2APNOGXUCCA&part=snippet,id&order=date&maxResults=3' ;
 //***2.  most popular vedio link below only key is my from-> console.google.com
-    let url='https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&key=AIzaSyAa6ZYHs9CZx3AEwZiqmoOjRqei5Gt3sFY&maxResults=100';
+    let url='https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=IN&key=AIzaSyBH13omGAg4EhFKIM56okxYCXW89FxvHUI&maxResults=10';
   
 function Allvedio() {
   let [commentbar,setcommentbar]=useState(true);
@@ -63,7 +64,7 @@ useEffect(()=>{
    {/* for ifream disply   media  src="https://www.youtube.com/embed/as it is only add (vedioId)" */}
  {values.map((e,i) => {
   return (
-    <div key={i} className='flex flex-col my-5  py-2'>
+    <div key={i} className='flex  flex-col my-5  py-2 overflow-x-auto w-[90%]'>
     <div className='flex p-3 justify-between items-center'>
     <div className='flex items-center '>
       <img className='border rounded-full md:w-[70px] md:h-[70px] w-[50px] h-50px ' src={`${e.snippet.thumbnails.default.url}`} alt=""   />
@@ -111,10 +112,11 @@ useEffect(()=>{
 <div className='flex item-center mx-3 '>
        <a className='px-1'>{`${e.statistics.commentCount}`/1000 .toFixed(1)} {"k"}{' '}comments</a>
  </div>
-<div className='flex item-center mr-2'>
+<div className='flex item-center flex-wrap mr-2'>
   <a className='px-1'>9</a>
-  <a>share</a>
-</div>
+  <IoIosShareAlt className='text-[2.5vw] md:text-[1.6vw]' />
+
+ </div>
 </div>
 </div>
 <div className='flex items-center justify-start pl-2'>
