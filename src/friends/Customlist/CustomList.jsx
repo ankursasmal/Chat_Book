@@ -14,9 +14,9 @@ function CustomList() {
 <div className='grid grid-cols-12 gap-1 '>
   {/* column 1 */}
   <div className='col-span-4 md:col-span-3   '>
-  <div div className='h-[100vh'>
+  <div div className='h-[100vh bg-white'>
     
- <div className='pl-3  mt-3 overflow-y-auto h-[100vh] w-[23%] flex flex-col' style={{position:'fixed',top:'85px',left:'0px'}}>
+ <div className='pl-3 bg-white mt-3 overflow-y-auto h-[100vh] w-[23%] flex flex-col' style={{position:'fixed',top:'76px',left:'0px'}}>
  <div className='flex flex-col    '> 
 
      <div className='flex flex-col my-3 sm:mx-0  md:mx-3 lg:mx-3  '>

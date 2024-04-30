@@ -24,7 +24,7 @@ function Nav() {
 </div>
 </div>
  <CiSearch className='text-5xl px-2 lg:hidden'  />
-<HiBars3  className='text-5xl  md:hidden ' onClick={(e)=>{
+<HiBars3  className='text-5xl  lg:hidden  ' onClick={(e)=>{
       e.preventDefault();
 if(clickCreate===true){
   setclickCreate(false);

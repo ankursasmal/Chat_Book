@@ -18,10 +18,10 @@ import { FaBookmark } from "react-icons/fa";
 <div className='grid grid-cols-12 gap-1 '>
   
   {/* column 1 */}
-  <div className='col-span-4 md:col-span-3   '>
-  <div div className='h-[100vh'>
+  <div className='col-span-4 md:col-span-3  '>
+  <div div className='h-[100vh  bg-white '>
     
- <div className='pl-3  mt-3 overflow-y-auto h-[100vh] w-[23%] flex flex-col' style={{position:'fixed',top:'85px',left:'0px'}}>
+ <div className='pl-3  mt-3 overflow-y-auto h-[100vh] w-[23%]  bg-white  flex flex-col' style={{position:'fixed',top:'76px',left:'0px'}}>
   <div className='flex flex-col    '> 
         <div className='flex items-center justify-between my-3 sm:mx-0  md:mx-3 lg:mx-3  '>
     <a className={`${style.fontsizes} text-2xl font-semibold`}>Vedio</a>
