@@ -11,19 +11,20 @@ import { IoRocketOutline } from "react-icons/io5";
 import { FaBookmark } from "react-icons/fa";
 
  import { MdArrowForwardIos } from "react-icons/md";
+import NavForRout from '../components/NavForRout';
  function Vedio() {
   return (
     <div>
-    <Nav/>
+    <NavForRout/>
 <div className='grid grid-cols-12 gap-1 '>
   
   {/* column 1 */}
-  <div className='col-span-4 md:col-span-3  ' style={{zIndex:'-1'}}>
-  <div div className='h-[100vh  bg-white '>
+  <div className='col-span-4 md:col-span-3  '  >
+  <div div className='h-[100vh]  bg-white '  >
     
  <div className='pl-3  mt-3  overflow-y-auto h-[100vh] w-[23%]  bg-white  flex flex-col' style={{position:'fixed',top:'76px',left:'0px'}}>
   <div className='flex flex-col    '> 
-        <div className='flex items-center justify-between my-3 sm:mx-0  md:mx-3 lg:mx-3  '>
+        <div className='flex items-center justify-between my-3 sm:mx-0  md:mx-3 lg:mx-3  '  >
     <a className={`${style.fontsizes} text-2xl font-semibold`}>Vedio</a>
         <IoSettingsSharp    className='text-2xl'/>
  </div>
@@ -41,7 +42,7 @@ import { FaBookmark } from "react-icons/fa";
 
     <PiTelevisionSimpleBold className='mr-4'/>
 
-   <a className={`${style.fontsizes}`}> Home</a>
+   <a className={`${style.fontsizes}`} > Home</a>
 </div></Link>
 <MdArrowForwardIos />
 
@@ -52,7 +53,7 @@ import { FaBookmark } from "react-icons/fa";
 
     <MdOutlineVideoCameraBack className='mr-4'/>
 
-    <a className={`${style.fontsizes}`}> Live</a>
+    <a className={`${style.fontsizes}`} > Live</a>
 </div>
 <MdArrowForwardIos />
 
@@ -64,7 +65,7 @@ import { FaBookmark } from "react-icons/fa";
 
     <SiYoutubeshorts className='mr-4'/>
 
-    <a className={`${style.fontsizes}`}>Shows</a>
+    <a className={`${style.fontsizes}`} >Shows</a>
 </div>
 <MdArrowForwardIos />
 
@@ -74,7 +75,7 @@ import { FaBookmark } from "react-icons/fa";
     <Link to="/vedios/explore"> 
 <div className='flex items-center my-3 sm:mx-0  md:mx-3 lg:mx-3 '>
     <IoRocketOutline className='mr-3'/>
-    <a className={`${style.fontsizes}`}> Explore</a>
+    <a className={`${style.fontsizes}`} > Explore</a>
 
     </div>
     </Link>
@@ -85,7 +86,7 @@ import { FaBookmark } from "react-icons/fa";
 
     <FaBookmark className='mr-4'/>
 
-    <a className={`${style.fontsizes}`}> Saved Videos</a>
+    <a className={`${style.fontsizes}`} > Saved Videos</a>
 </div>
 <MdArrowForwardIos />
 

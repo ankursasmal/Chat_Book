@@ -3,17 +3,17 @@ import { IoStarOutline } from "react-icons/io5";
 import { TbLockOff } from "react-icons/tb";
 import { FaPhotoVideo } from "react-icons/fa";
 import { GoPlusCircle } from "react-icons/go";
-import Nav from '../../components/Nav';
-import style from '../../Style/CustomList.module.css'
+ import style from '../../Style/CustomList.module.css'
 import { Link, Outlet } from "react-router-dom";
+import NavForRout from '../../components/NavForRout';
 
 function CustomList() {
   return (
     <div>
-    <Nav/>
+<NavForRout/>
 <div className='grid grid-cols-12 gap-1 '>
   {/* column 1 */}
-  <div className='col-span-4 md:col-span-3   ' style={{zIndex:'-1'}}>
+  <div className='col-span-4 md:col-span-3   ' >
   <div div className='h-[100vh bg-white'>
     
  <div className='pl-3 bg-white mt-3 overflow-y-auto h-[100vh] w-[23%] flex flex-col' style={{position:'fixed',top:'76px',left:'0px'}}>

@@ -9,14 +9,15 @@ import { IoSettingsSharp } from "react-icons/io5";
 import style from '../Style/MemoryUi.module.css';
 
  import { MdArrowForwardIos } from "react-icons/md";
+import NavForRout from '../components/NavForRout';
  function GroupUi() {
     return (
     <div>
-    <Nav/>
+    <NavForRout/>
 <div className='grid grid-cols-12 gap-1 '>
   
   {/* column 1 */}
-  <div className='col-span-4 md:col-span-3   ' style={{zIndex:'-1'}}>
+  <div className='col-span-4 md:col-span-3   ' >
   <div div className='h-[100vh bg-white'>
     
  <div className='pl-3  bg-white mt-3 overflow-y-auto h-[100vh] w-[23%] flex flex-col' style={{position:'fixed',top:'76px',left:'0px'}}>
