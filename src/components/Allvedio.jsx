@@ -64,7 +64,7 @@ useEffect(()=>{
    {/* for ifream disply   media  src="https://www.youtube.com/embed/as it is only add (vedioId)" */}
  {values.map((e,i) => {
   return (
-    <div key={i} className='flex  flex-col my-5  py-2 overflow-x-auto w-[90%]'>
+    <div key={i} className='flex  flex-col my-5  py-2 overflow-x-auto w-[100%]'>
     <div className='flex p-3 justify-between items-center'>
     <div className='flex items-center '>
       <img className='border rounded-full md:w-[70px] md:h-[70px] w-[50px] h-50px ' src={`${e.snippet.thumbnails.default.url}`} alt=""   />
@@ -92,7 +92,7 @@ useEffect(()=>{
     {/* vedio section */}
                 <div className='mt-1 '>
 
-   <iframe key={i} className='h-[200px] w-[100%]   lg:h-[700px] w-[100%] md:w-[100%] h-[500px]  object-cover' src={`https://www.youtube.com/embed/${e.id}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay encrypted-media; gyroscope; picture-in-picture; web-share " allowfullscreen ></iframe>  
+   <iframe key={i} className='md:h-[35vw] h-[55vw]  w-[100%]      object-cover' src={`https://www.youtube.com/embed/${e.id}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay encrypted-media; gyroscope; picture-in-picture; web-share " allowfullscreen ></iframe>  
    
        </div>  
         
