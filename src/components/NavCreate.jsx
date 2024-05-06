@@ -28,7 +28,7 @@ function NavCreate() {
 </div>
 
 <hr/>
-<div className='flex items-center my-3 '>
+<div className='flex items-center mt-3 '>
     <AiOutlineSound className="mr-3"/>
     <a>Ads</a>
 </div>

@@ -53,7 +53,7 @@ let commentaction=(i)=>{
 
  //  use effect under api handel ,[] dependency nothing means only one time exiquit 
 useEffect(()=>{
-    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=90&q=${vedioId}&key=AIzaSyAa6ZYHs9CZx3AEwZiqmoOjRqei5Gt3sFY`).then(res=>res.json()).then(data=>{ 
+    fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=9&q=${vedioId}&key=AIzaSyAa6ZYHs9CZx3AEwZiqmoOjRqei5Gt3sFY`).then(res=>res.json()).then(data=>{ 
            let {items}=data;
           //  value arr under arr elemet transper
             setval(items);
@@ -64,7 +64,7 @@ useEffect(()=>{
  
 
   return (
-    <div>
+    <div className='lg:mt-[85px] sm:mt-[10vw] md:mt-[85px] '>
    {/* for ifream disply   media  src="https://www.youtube.com/embed/as it is only add (vedioId)" */}
  {values.map((e,i) => {
   return (

@@ -53,24 +53,12 @@ function Grid2() {
 </div>
  </div>
  <ContactSection/>
- <ContactSection/>
- <ContactSection/>
- <ContactSection/>
- <ContactSection/>
- <ContactSection/>
- <ContactSection/>
- <ContactSection/>
- <ContactSection/>
- <ContactSection/>
- <ContactSection/>
+  
   
  <hr className='m-3 '/>
-<h3>Recomanded Grops</h3>
+<h3 className='text-2xl font-semibold'>Recomanded Grops</h3>
 <ContactSection/>
-<ContactSection/>
-<ContactSection/>
-<ContactSection/>
-<ContactSection/>
+ 
 {/* create group */}
 <div className='mt-3 pl-1 flex items-center justify-between  hover:p-1 hover:bg-gray-100 hover:rounded-md'>
        <div className=' flex items-center'>

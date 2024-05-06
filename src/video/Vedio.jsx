@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Nav from '../components/Nav'
 import style from '../Style/Vedio.module.css'
 import { Link, Outlet } from "react-router-dom";
@@ -12,7 +12,11 @@ import { FaBookmark } from "react-icons/fa";
 
  import { MdArrowForwardIos } from "react-icons/md";
 import NavForRout from '../components/NavForRout';
+import VedioSearch from './VedioSearch';
  function Vedio() {
+    let [inputval,setinput]=useState('');
+    let [val,setval]=useState('');
+
   return (
     <div>
     <NavForRout/>
@@ -29,12 +33,13 @@ import NavForRout from '../components/NavForRout';
         <IoSettingsSharp    className='text-2xl'/>
  </div>
  
-    <div className='flex px-1 py-.5 md:px-2 md:py-1 my-3 items-center border-1px bg-gray-100  rounded-full  md:w-[95%]  w-[100%] '>
-      <CiSearch className='text-3xl px-2' />
+ <Link to='/vedios/search'>   <form className='flex px-1 py-.5 md:px-2 md:py-1 my-3 items-center border-1px bg-gray-100  rounded-full  md:w-[95%]  w-[100%] '>
+      <CiSearch className='text-3xl px-2' type='button' onSubmit={()=>setval(inputval)}/>
 
-<input type="text" placeholder='search vedio' className='w-[92%] p-[1px]  bg-gray-100   outline-none border-none  text-[9px] lg:text-[15px] md:text-[13px] rounded-full' />
-</div>
-
+<input type="text" placeholder='search vedio' className='w-[92%] p-[1px]  bg-gray-100   outline-none border-none  text-[9px] lg:text-[15px] md:text-[13px] rounded-full' onChange={(e)=>{setinput(e.target.value)}} />
+<div className='hidden '> <VedioSearch vedioId={val}/></div>
+</form>
+</Link> 
     <div className='flex items-center justify-between sm:mx-0  md:mx-4 lg:mx-4 my-3'>
       
     <Link to='/vedios'> 

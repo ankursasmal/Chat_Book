@@ -15,7 +15,7 @@ function Nav() {
  
       <nav className='flex mb-1 justify-between z-30 items-center navbarmain'>
   <div className='flex px-0.5 items-center'>
-<img className='pl-[6px] h-[50px] pr-2 ' src="https://png.pngtree.com/element_our/png/20181229/vector-chat-icon-png_302635.jpg" alt="" />
+<img className='pl-[6px] h-[43px] md:h-[55px] pr-2  ' src="https://png.pngtree.com/element_our/png/20181229/vector-chat-icon-png_302635.jpg" alt="" />
 <div className='lg:block hidden '> 
       <div className='flex   items-center border-1px border-black rounded-full  bg-slate-200 '>
       <CiSearch className='text-3xl px-2' />

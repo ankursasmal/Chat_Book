@@ -103,14 +103,14 @@ useEffect(()=>{
 {/* like action display */}
 
 {/* {`${e.statistics.likeCount}`/1000 .toFixed(1)} or */}
-  <a>{e.statistics.likeCount}</a>
+  <a> {Math.floor( e.statistics.likeCount/1000)}k</a>
  
 
 </div>
 <div className='flex items-center '>
 
 <div className='flex item-center mx-3 '>
-       <a className='px-1'>{`${e.statistics.commentCount}`/1000 .toFixed(1)} {"k"}{' '}comments</a>
+       <a className='px-1'>{e.statistics.commentCount/1000 .toFixed(1)} {"k"}{' '}comments</a>
  </div>
 <div className='flex item-center flex-wrap mr-2'>
   <a className='px-1'>9</a>

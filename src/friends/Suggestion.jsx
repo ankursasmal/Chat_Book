@@ -13,15 +13,7 @@ function Suggestion() {
 </div>
 <div className=' overflow-y-scroll  flex flex-wrap items-center  justify-center md:px-4 px-[2px]'> 
  <RequestCard text={"Add Friend"} text1={"Remove"}/>
- <RequestCard text={"Add Friend"} text1={"Remove"}/>
- <RequestCard text={"Add Friend"} text1={"Remove"}/>
- <RequestCard text={"Add Friend"} text1={"Remove"}/>
- <RequestCard text={"Add Friend"} text1={"Remove"}/>
- <RequestCard text={"Add Friend"} text1={"Remove"}/>
- <RequestCard text={"Add Friend"} text1={"Remove"}/>
- <RequestCard text={"Add Friend"} text1={"Remove"}/>
- <RequestCard text={"Add Friend"} text1={"Remove"}/>
- <RequestCard text={"Add Friend"} text1={"Remove"}/>
+  
 
  </div>
   </div>

@@ -46,6 +46,9 @@ import Your_feed_Groups from './Groups/Your_feed_Groups.jsx';
 import DiscoveriesGroup from './Groups/DiscoveriesGroup.jsx';
 import Your_groups from './Groups/Your_groups.jsx';
 import Modal_profile from './components/Modal_profile.jsx';
+import VedioSearch from './video/VedioSearch.jsx';
+import AllMarketThing from './MarketPlace/AllMarketThing.jsx';
+import CategoriesItems from './MarketPlace/CategoriesItems.jsx';
 
  const router = createBrowserRouter([
  //for nav routing
@@ -75,9 +78,15 @@ import Modal_profile from './components/Modal_profile.jsx';
     element:<Vedio/>,
     children:[
       {
+        // under child by default <VedioContant/> at sama rout
         path: "/vedios",
     element:<VedioContant/>,
-      },{
+      },
+      {
+        path: "/vedios/search",
+        element:<VedioSearch/>,
+          },
+      {
       path: "/vedios/vedioContant",
       element:<VedioContant/>,
         },
@@ -237,7 +246,7 @@ import Modal_profile from './components/Modal_profile.jsx';
       children:[
         {
           path: "/market-place",
-          element:<Allfeed/>,
+          element:<AllMarketThing/>,
         
         },
         {
@@ -250,6 +259,12 @@ import Modal_profile from './components/Modal_profile.jsx';
           element:<InboxMarketplace/>,
         
         },
+        {
+          path: "/market-place/Categories/:itemsType",
+          element:<CategoriesItems/>,
+        
+        },
+
       ]
       },
       {

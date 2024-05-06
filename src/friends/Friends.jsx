@@ -11,20 +11,7 @@ function Friends() {
     </div>
     <div className='flex flex-wrap justify-center mt-4'>
         <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/><Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
+        
 
     </div>
     </div>

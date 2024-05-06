@@ -85,7 +85,7 @@ else{
 
 }    
      }}/>
-     <img className='border rounded-full  w-[7vw] h-[7vw] md:w-[5vw] md:h-[5vw] lg:w-[3.8vw] lg:h-[3.8vw]   mr-1' onClick={(e)=>{
+     <img className='border rounded-full  w-[8vw] h-[8vw] md:w-[4vw] md:h-[4vw] lg:w-[2vw] lg:h-[2vw]   mr-1' onClick={(e)=>{
       e.preventDefault();
 if(clickProfile===true){
   setclickProfile(false);

@@ -80,12 +80,12 @@ function Grid1ForNav() {
                   <Title      name={'Feeds'}/> 
 
         </div></Link>
-        <Link to='/test'>   <div className='flex items-center my-3'>
+           <div className='flex items-center my-3'>
         <BiCalendarStar className='md:mx-4  mx-2 '/>
 
                   <Title      name={'Events'}/> 
 
-        </div></Link>
+        </div> 
        <div className='flex items-center my-3'>
        <img className='border rounded-full w-[40px] h-[40px] mr-3  '  src=" https://img.myloview.com/posters/line-graph-icon-isolated-on-white-background-statistics-symbol-modern-simple-vector-icon-for-website-design-mobile-app-ui-vector-illustration-700-255818520.jpg" alt=""   />
                   <Title      name={'AddMannager'}/> 
