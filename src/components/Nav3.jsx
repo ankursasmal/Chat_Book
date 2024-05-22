@@ -48,7 +48,7 @@ else{
 }    
      }}  />
 
-  <CiCirclePlus className='lg:hidden  text-6xl px-4 '  onClick={(e)=>{
+  <CiCirclePlus className='lg:hidden  text-7xl px-4 '  onClick={(e)=>{
       e.preventDefault();
 if(clickCreate===true){
   setclickCreate(false);

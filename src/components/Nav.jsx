@@ -23,7 +23,7 @@ function Nav() {
 <input type="text" placeholder='Post a status update' className='w-[92%]  outline-none border-none  bg-slate-200  text-black  p-2  text-[9px] lg:text-[15px] md:text-[13px] rounded-full' />
 </div>
 </div>
- <CiSearch className='text-5xl px-2 lg:hidden'  />
+ <CiSearch className='text-6xl px-2 lg:hidden'  />
 <HiBars3  className='text-5xl  lg:hidden  ' onClick={(e)=>{
       e.preventDefault();
 if(clickCreate===true){

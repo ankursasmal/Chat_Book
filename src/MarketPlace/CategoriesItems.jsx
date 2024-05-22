@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import {passItems} from './MarketplaceUi'
 function CategoriesItems() {
-    // let [product,setproduct]=useState([]);
+    let [product,setproduct]=useState([]);
     // const value=useContext(passItems);
      // let [value,setvalue]=useState('');
 
